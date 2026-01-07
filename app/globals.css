@@ -3,11 +3,25 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --our-black: rgb(10, 10, 10);
+  --our-orange: rgb(255, 178, 97);
+  --nav-bg: rgb(5, 5, 5);
+  --our-red: rgb(239, 81, 67);
+  --warm-sand: rgb(254, 233, 206);
+  --peach-cream: rgb(255, 243, 226);
+  --dark-gray: rgb(78, 78, 78);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-our-black: var(--our-black);
+  --our-orange: var(--our-orange);
+  --nav-bg: var(--nav-bg);
+  --our-red: var(--our-red);
+  --warm-sand: var(--warm-sand);
+  --peach-cream: var(--preach-cream);
+  --dark-gray: var(--dark-gray);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -20,7 +34,7 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--our-black);
+  color: var(--our-orange);
   font-family: Arial, Helvetica, sans-serif;
 }
