@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <div className="bg-white">Hero</div>
   )
 }
 export default Hero
