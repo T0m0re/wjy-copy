@@ -3,7 +3,7 @@ import Link from "next/link"
 const Navbar = () => {
   return (
     <>
-    <header className="fixed top-0 left-0 bg-nav-bg max-sm:pl-4 max-md:w-full lg:h-dvh w-16 flex lg:flex-col items-center overflow-hidden lg:gap-6">
+    <header className="fixed top-0 left-0 bg-nav-bg max-sm:pl-4 max-md:w-full lg:h-dvh w-16 flex lg:flex-col items-center overflow-hidden lg:gap-6 max-md:justify-between">
         <div className="flex items-center gap-8 py-4">
             <div className="flex flex-col items-start gap-2">
                 <span className="w-8 h-0.5 bg-peach-cream"></span>
@@ -14,59 +14,59 @@ const Navbar = () => {
 
         </div>
         
-        <nav className="lg:flex-5 nav max-md:hidden flex lg:flex-col gap-4 items-center w-full relative">
-            <Link href="#intro" className="flex flex-col justify-between w-border flex-none">
-                <div className="group flex items-center lg:rotate-90 h-auto">
+        <nav className="lg:flex-5 nav max-md:hidden flex lg:flex-col gap-4 items-center w-full relative ">
+            <Link href="#intro" className="flex flex-col items-center justify-between border flex-none lg:w-full will-change-auto h-">
+                <div className="group flex items-center lg:[writing-mode:vertical-rl] border">
                     <p className="flex-none">I.</p>
-                    <p className="w-0 group-hover:w-full flex-none overflow-hidden">
-                            Intro
+                    <p className="hidden group-hover:block flex-none">
+                        Intro
                     </p>
                 </div>
             </Link>
-            <Link href="#intro" className="flex flex-col justify-between lg:rotate-90 ">
-                <div className="h-auto">
+            <Link href="#intro" className="flex flex-col items-center justify-between border flex-none lg:w-full ">
+                <div className="group flex items-center lg:[writing-mode:vertical-rl] border">
                     <p className="">II.</p>
-                    <p className="hidden">Who I am</p>
+                    <p className="hidden group-hover:block flex-none">Who I am</p>
                 </div>
                 
             </Link>
-            <Link href="#intro" className="flex flex-col justify-between lg:rotate-90 ">
-                <div className="w-full flex">
+            <Link href="#intro" className="flex flex-col items-center justify-between border flex-none lg:w-full ">
+                <div className="group flex items-center lg:[writing-mode:vertical-rl] border">
                     <p className="w-full">III.</p>
-                    <p className="hidden">Experiences</p>
+                    <p className="hidden group-hover:block flex-none">Experiences</p>
                 </div>
                 
             </Link>
-            <Link href="#intro" className="flex flex-col justify-between lg:rotate-90 ">
-                <div className="w-full flex">
+            <Link href="#intro" className="flex flex-col items-center justify-between border flex-none lg:w-full">
+                <div className="group flex items-center lg:[writing-mode:vertical-rl] border">
                     <p className="w-full">IV.</p>
-                    <p className="hidden">Archievements</p>
+                    <p className="hidden group-hover:block flex-none">Archievements</p>
                 </div>
             
             </Link>
-            <Link href="#intro" className="flex flex-col justify-between lg:rotate-90 ">
-                <div className="w-full flex">
+            <Link href="#intro" className="flex flex-col items-center justify-between border flex-none lg:w-full">
+                <div className="group flex items-center lg:[writing-mode:vertical-rl] border">
                     <p className="w-full">V.</p>
-                    <p className="hidden">Industries</p>
+                    <p className="hidden group-hover:block flex-none">Industries</p>
                 </div>
                 
             </Link>
-            <Link href="#intro" className="flex flex-col justify-between lg:rotate-90 border border-white">
-                <div className="w-full flex">
+            <Link href="#intro" className="flex flex-col items-center justify-between border flex-none lg:w-full">
+                <div className="group flex items-center lg:[writing-mode:vertical-rl] border">
                     <p className="w-full">VI.</p>
-                    <p className="hidden">Recognitions</p>
+                    <p className="hidden group-hover:block flex-none">Recognitions</p>
                 </div>
                 
             </Link>
-            <Link href="#intro" className="flex flex-col justify-between border border-white w-fit">
-                <div className="w-full flex items-center  group border border-pink-800 lg:rotate-90">
+            <Link href="#intro" className="flex flex-col items-center justify-between border flex-none lg:w-full">
+                <div className="group flex items-center lg:[writing-mode:vertical-rl] border">
                     <p className="">VII.</p>
-                    <p className=" border border-red-300">Get in Touch</p>
+                    <p className=" hidden group-hover:block flex-none">Get in Touch</p>
                 </div>
                 
             </Link>
         </nav>
-        <button className="lg:flex-2 max-md:w-30  bg-our-orange">
+        <button className="lg:flex-2 max-md:w-30 bg-our-orange max-md:self-stretch">
             <p className="text-sm lg:rotate-90 text-our-black font-bold text-nowrap uppercase">Let&apos;s Connect</p>
         </button>
     </header>
