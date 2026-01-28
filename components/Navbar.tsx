@@ -1,4 +1,7 @@
+'use client'
 import Link from "next/link"
+import gsap from "gsap"
+import { useGSAP } from "@gsap/react"
 
 const navItems = [
     {link: "#into",
@@ -31,9 +34,18 @@ const navItems = [
     }
 ]
 const Navbar = () => {
+    useGSAP(()=>{
+        gsap.fromTo(".header", {
+            x : -100
+
+        }, {
+            x: 0,
+            animation: "ease-in"
+        })
+    })
   return (
     <>
-    <header className="fixed top-0 left-0 bg-nav-bg max-sm:pl-4 max-lg:w-full lg:h-dvh w-16 flex lg:flex-col items-center overflow-hidden gap-6 max-md:justify-between z-501">
+    <header className="header fixed top-0 left-0 bg-nav-bg max-sm:pl-4 max-lg:w-full lg:h-dvh w-16 flex lg:flex-col items-center overflow-hidden gap-6 max-md:justify-between z-501">
         <div className="flex items-center gap-8 py-4">
             <div className="flex flex-col items-start gap-2">
                 <span className="w-8 h-0.5 bg-peach-cream"></span>
